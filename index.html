@@ -3,208 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Taufik Hendratmo</title>
+  <title>Taufik Hendratmo – Web Developer</title>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: white;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    .project {
-      margin-bottom: 1rem;
-      padding: 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-    form button {
-      background: #333;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #eee;
-      margin-top: 2rem;
-    }
-    img.profile {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border: 3px solid #ccc;
-    }
-    .about-flex {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-  
-    .carousel {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      overflow: hidden;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    .slides {
-      display: flex;
-      width: 300%;
-      animation: slide 9s infinite;
-    }
-    .slides img {
-      width: 100%;
-      flex-shrink: 0;
-    }
-    @keyframes slide {
-      0% {transform: translateX(0%);}
-      33% {transform: translateX(-100%);}
-      66% {transform: translateX(-200%);}
-      100% {transform: translateX(0%);}
-    }
-
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-</style>
+    body { font-family: sans-serif; background: #f4f4f4; margin: 0; color: #333; }
+    header, footer { background: #2c3e50; color: white; text-align: center; padding: 2rem; }
+    nav a { margin: 0 1rem; color: white; text-decoration: none; }
+    section { max-width: 800px; margin: auto; padding: 2rem; }
+    .cta { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.05); text-align: center; }
+    .cta a { display: inline-block; margin-top: 1rem; background: #2c3e50; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; }
+  </style>
 </head>
 <body>
-
-
   <header>
     <h1>Taufik Hendratmo</h1>
-    <a href="#tentang">Tentang</a>
-    <a href="#proyek">Proyek</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#kontak">Kontak</a>
+    <p>Web Developer • UI/UX Enthusiast</p>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="jasa.html">Pesan Jasa</a>
+      <a href="produk.html">Produk Digital</a>
+    </nav>
   </header>
-
-</header>
-
-<section id="tentang">
-  <h2>Tentang Saya</h2>
-  <div class="about-flex">
-    <img src="profile.jpg" alt="Foto Profil" class="profile" />
-    <p style="flex: 1; min-width: 250px;">Saya adalah seorang web developer asal Yogyakarta dengan minat pada UI/UX dan pengembangan aplikasi berbasis web. 
-Saya aktif membangun proyek open-source dan juga menyukai desain minimalis.</p>
-  </div>
-</section>
-
-<section id="proyek">
-  <h2>Daftar Proyek</h2>
-  <div class="project">
-    <h3>Portofolio Pribadi</h3>
-    <p>Website pribadi dengan filter proyek, dark mode, dan blog. Dibuat dengan HTML, CSS, JS.</p>
-    <p><a href="https://achonk07.github.io/porto" target="_blank">Lihat Proyek</a></p>
-  </div>
-  <div class="project">
-    <h3>Sistem Inventaris</h3>
-    <p>Web app untuk manajemen inventaris toko kecil, menggunakan PHP dan MySQL.</p>
-  </div>
-</section>
-
-<section id="galeri">
-    <img src="profile.jpg" alt="Contoh Proyek 1" />
-    <img src="profile.jpg" alt="Contoh Proyek 2" />
-    <img src="profile.jpg" alt="Contoh Proyek 3" />
-  </div>
-</section>
-
-<section id="galeri">
-  <h2>Galeri Proyek</h2>
-  <div class="gallery-grid">
-    <div>
-      <img src="galeri1.jpg" alt="Toko Bambang – Sistem Inventaris" />
-      <p style="text-align:center;">Toko Bambang</p>
+  <section>
+    <h2>Selamat Datang</h2>
+    <div class="cta">
+      <p>Saya siap membantu Anda membangun website pribadi, UMKM, portofolio, dan lainnya.</p>
+      <a href="jasa.html">Pesan Jasa Website</a>
     </div>
-    <div>
-      <img src="profile.jpg" alt="Proyek 2" />
-      <p style="text-align:center;">Portofolio Web</p>
+    <div class="cta">
+      <p>Saya juga menjual template HTML dan desain portofolio siap pakai.</p>
+      <a href="produk.html">Lihat Produk Digital</a>
     </div>
-    <div>
-      <img src="profile.jpg" alt="Proyek 3" />
-      <p style="text-align:center;">Proyek UI/UX</p>
-    </div>
-  </div>
-</section>
-
-<section id="kontak">
-  <h2>Kontak Saya</h2>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeDBehPUCHBDH0GfqTooSRdDBebyzvHJ7ZgWRKeYaTFT9uX-g/formResponse" method="POST" target="_blank">
-    <label>Nama:</label>
-    <input type="text" name="entry.910373664" required />
-
-    <label>Email:</label>
-    <input type="email" name="entry.902654410" required />
-
-    <label>Pesan:</label>
-    <textarea name="entry.1017370440" rows="5" required></textarea>
-
-    <button type="submit">Kirim</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2025 Taufik Hendratmo | <a href="https://github.com/Achonk07" target="_blank">GitHub</a></p>
-</footer>
-
+  </section>
+  <footer>
+    <p>&copy; 2025 Taufik Hendratmo</p>
+  </footer>
 </body>
 </html>
