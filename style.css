@@ -1,0 +1,21 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0; padding: 0;
+  background: #fff;
+  color: #000;
+}
+body.dark-mode {
+  background: #111;
+  color: #eee;
+}
+header, footer {
+  padding: 1rem;
+  background: #f0f0f0;
+}
+.dark-mode header, .dark-mode footer {
+  background: #222;
+}
+nav { padding: 1rem; }
+button { margin-right: 0.5rem; }
+.project { margin: 1rem; padding: 1rem; border: 1px solid #ccc; }
