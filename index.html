@@ -111,6 +111,19 @@
       100% {transform: translateX(0%);}
     }
 
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
 </style>
 </head>
 <body>
@@ -152,6 +165,24 @@ Saya aktif membangun proyek open-source dan juga menyukai desain minimalis.</p>
     <img src="profile.jpg" alt="Contoh Proyek 1" />
     <img src="profile.jpg" alt="Contoh Proyek 2" />
     <img src="profile.jpg" alt="Contoh Proyek 3" />
+  </div>
+</section>
+
+<section id="galeri">
+  <h2>Galeri Proyek</h2>
+  <div class="gallery-grid">
+    <div>
+      <img src="galeri1.jpg" alt="Toko Bambang – Sistem Inventaris" />
+      <p style="text-align:center;">Toko Bambang</p>
+    </div>
+    <div>
+      <img src="profile.jpg" alt="Proyek 2" />
+      <p style="text-align:center;">Portofolio Web</p>
+    </div>
+    <div>
+      <img src="profile.jpg" alt="Proyek 3" />
+      <p style="text-align:center;">Proyek UI/UX</p>
+    </div>
   </div>
 </section>
 
